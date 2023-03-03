@@ -2,3 +2,35 @@ body {
     display: grid;
     background-color: #e2e8f0;
 }
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+input {
+    background-color: #cbd5e1;
+    border: #cbd5e1 solid 1px;
+    border-radius: 9px;
+}
+nav {
+    display: grid;
+}
+
+ul {
+    list-style: none;
+}
+
+#search {
+    display: grid;
+    grid-template-columns: .5fr 6fr;
+    align-items: center;
+}
+
+#prof-header {
+    display: grid;
+    grid-template-columns: 50px 50px 120px ;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;  
+}
