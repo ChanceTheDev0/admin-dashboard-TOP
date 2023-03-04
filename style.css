@@ -1,12 +1,14 @@
 body {
     background-color: #e2e8f0;
+    margin: 0px;
 }
 
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column: 2 / 3;
     background-color: white;
-    width: 100vw;
+    width: 85vw;
 }
 
 input {
@@ -16,10 +18,47 @@ input {
 }
 nav {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 70%;
+    grid-row: 1 / 5;
+    height: 100vh;
+    background-color: #0ea5e9;
+    color: white;
+}
+
+h1 {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+    font-size: 32px;
+}
+
+h1>img {
+    margin-left: 30px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 15% 30% 30% 20%;
+    grid-template-rows: 8% 15% 15% 15%;
+    justify-content: start;
 }
 
 ul {
     list-style: none;
+    padding: 0px;
+    display: grid;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+li {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 22px 1fr;
+    padding: 3px;
 }
 
 #search {
@@ -35,7 +74,7 @@ form {
 #prof-header {
     display: grid;
     grid-template-columns: 50px 50px 120px ;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     gap: 8px;  
 }
@@ -44,6 +83,3 @@ form {
     margin-left: 10px;
 }
 
-.h-wrapper {
-    display: grid;
-}
