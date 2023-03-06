@@ -5,8 +5,8 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 18% 30% 30% 20%;
-    grid-template-rows: 20% 25% 25% 25%;
+    grid-template-columns: 20.5% 26% 26% 22.5%;
+    grid-template-rows: 20% 2.5em 24% 24% 24%;
     justify-content: start;
 }
 
@@ -14,7 +14,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
-    width: 82vw;
+    width: 78.8vw;
 }
 
 #resp-img:hover {
@@ -102,13 +102,7 @@ h1 {
 }
 
 h1>img {
-    margin-left: 65px;
-}
-
-h2 {
-    display: grid;
-    grid-row: 2 / 3;
-    margin-left: 15px;
+    margin-left: 125px;
 }
 
 form {
@@ -146,3 +140,50 @@ li:hover {
     align-items: center;
 }
 
+h2 {
+    display: grid;
+    grid-row: 2 / 3;
+    margin: 15px;
+}
+
+.cards-row1 {
+    display: grid;
+    grid-row: 3 / 4;
+    background-color: white;
+    margin: 15px;
+    border: #e2e8f0 solid 1px;
+    border-radius: 10px;
+    box-shadow: inset 0.5em 0 0 #facc15, 0.2em 0.2em 0.2em rgba(0,0,0,0.3);
+}
+
+.cards-row2 {
+    display: grid;
+    grid-row: 4 / 5;
+    background-color: white;
+    margin: 15px;
+    border: #e2e8f0 solid 1px;
+    border-radius: 10px;
+    box-shadow: inset 0.5em 0 0 #facc15, 0.2em 0.2em 0.2em rgba(0,0,0,0.3);
+}
+
+.card-cell7 {
+    display: grid;
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    background-color: white;
+    margin: 15px;
+    border: #e2e8f0 solid 1px;
+    border-radius: 10px;
+    box-shadow: inset 0.5em 0 0 #facc15, 0.2em 0.2em 0.2em rgba(0,0,0,0.3);
+}
+
+.card-cell8 {
+    display: grid;
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+    background-color: white;
+    margin: 15px;
+    border: #e2e8f0 solid 1px;
+    border-radius: 10px;
+    box-shadow: inset 0.5em 0 0 #facc15, 0.2em 0.2em 0.2em rgba(0,0,0,0.3);
+}
