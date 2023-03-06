@@ -3,15 +3,25 @@ body {
     margin: 0px;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 18% 30% 30% 20%;
+    grid-template-rows: 20% 25% 25% 25%;
+    justify-content: start;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column: 2 / 3;
     background-color: white;
-    width: 85vw;
+    width: 82vw;
 }
 
-p {
+#resp-img:hover {
+    cursor: pointer;
+}
+
+.first-p {
     font-size: 19px;
     font-weight: bold;
 }
@@ -19,7 +29,8 @@ p {
 input {
     background-color: #cbd5e1;
     border: #cbd5e1 solid 1px;
-    border-radius: 9px;
+    border-radius: 12px;
+    font-size: 22px;
 }
 
 #prof-header {
@@ -30,9 +41,46 @@ input {
     gap: 8px;  
 }
 
-#magnify {
-    margin-left: 10px;
+.magnify {
+    margin-left: 16px;
 }
+
+.second-p {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 60px 70px 170px;
+    font-size: 22px;
+}
+
+span {
+    font-weight: bold;
+    display: grid;
+    align-items: end;
+}
+
+.bttn-cont {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+}
+
+.bttn {
+    padding: 0px;
+    height: 40px;
+    width: 80px;
+    background-color: #0ea5e9;
+    border: #0ea5e9 solid 1px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    border: 1px solid #0ea5e9;
+    color: #0ea5e9;
+    cursor: pointer;
+  }
 
 nav {
     display: grid;
@@ -54,7 +102,13 @@ h1 {
 }
 
 h1>img {
-    margin-left: 30px;
+    margin-left: 65px;
+}
+
+h2 {
+    display: grid;
+    grid-row: 2 / 3;
+    margin-left: 15px;
 }
 
 form {
@@ -66,6 +120,7 @@ ul {
     padding: 0px;
     display: grid;
     justify-content: center;
+    gap: 10px;
     font-size: 24px;
     font-weight: bold;
 }
@@ -74,8 +129,16 @@ li {
     display: grid;
     align-items: center;
     grid-template-columns: 22px 1fr;
-    padding: 3px;
+    padding: 4px;
 }
+
+li:hover {
+    background-color: white;
+    border: 1px solid #0ea5e9;
+    border-radius: 20px;
+    color: #0ea5e9;
+    cursor: pointer;
+  }
 
 #search {
     display: grid;
@@ -83,9 +146,3 @@ li {
     align-items: center;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 15% 30% 30% 20%;
-    grid-template-rows: 15% 15% 15% 15%;
-    justify-content: start;
-}
